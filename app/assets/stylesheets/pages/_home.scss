@@ -9,3 +9,33 @@
     width: 31%;
   }
 }
+.home-bio {
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(189, 197, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bio-sub-cont {
+    display: flex;
+    width: 68vw;
+    .bio-sub-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 150px;
+      .left-contacts {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: inherit;
+          text-decoration: none;
+          margin-top: 10px;
+        }
+      }
+    }
+    #ford1 {
+      height: 68vh;
+    }
+  }
+}
