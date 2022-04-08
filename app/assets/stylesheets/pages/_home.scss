@@ -1,0 +1,11 @@
+.home-images {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 100px;
+  img {
+    height: 68vh;
+    width: 31%;
+  }
+}

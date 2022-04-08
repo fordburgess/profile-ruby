@@ -1,0 +1,11 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+// components
+@import "components/header";
+// pages
+@import "pages/home";
+
+body {
+  background-color: rgb(230, 225, 216);
+  font-family: 'Merriweather';
+}
