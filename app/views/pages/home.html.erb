@@ -26,3 +26,17 @@
     </div>
   </div>
 </div>
+<div class='home-projects'>
+  <div class='projects-header'>
+    <h2>Projects</h2>
+  </div>
+  <div class='projects-display'>
+    <% @projects.each do |project| %>
+      <%= render 'shared/project', :locals => {
+        title: project.title,
+        description: project.description,
+        tech: project.tech,
+        background: project.background } %>
+    <% end %>
+  </div>
+</div>
