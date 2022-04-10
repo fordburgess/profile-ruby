@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_10_194704) do
+ActiveRecord::Schema.define(version: 2022_04_10_203046) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title"
@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(version: 2022_04_10_194704) do
     t.string "width"
     t.string "color"
     t.string "font"
+    t.string "color2"
+    t.string "color3"
+    t.string "font_color"
+    t.string "font2"
   end
 
 end

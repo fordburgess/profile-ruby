@@ -2,7 +2,15 @@
 style='
 background-image: linear-gradient(<%= props[:color] %>, <%= props[:color] %>), url(<%= props[:background] %>);
 width: <%= props[:width] %>;
-font-family: <%= props[:font] %>'>
-  <h1><%= props[:title] %></h1>
-  <h6><%= props[:description] %><h6>
+font-family: <%= props[:font] %>;'
+>
+  <h1 style='
+  color: <%= props[:font_color] %>;
+  # text-shadow: 2px 2px 1px ;
+  '>
+  <%= props[:title] %></h1>
+  <h6 style='
+  font-family: <%= props[:font2] %>;
+  '>
+  <%= props[:description] %><h6>
 </div>
