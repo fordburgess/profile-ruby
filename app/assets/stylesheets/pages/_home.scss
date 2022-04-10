@@ -46,4 +46,12 @@
     height: 20vh;
     padding: 0px 75px 0px 75px;
   }
+  .projects-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
 }

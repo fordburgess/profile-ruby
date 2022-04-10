@@ -1,5 +1,13 @@
 .project-self {
-  height: 50vh;
-  width: 25vw;
-  margin: 10px 30px 10px 30px;
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white !important;
+  font-size: 33px;
+  h1 {
+    margin-bottom: -10px;
+  }
 }
