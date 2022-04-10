@@ -31,12 +31,16 @@
     <h2>Projects</h2>
   </div>
   <div class='projects-display'>
-    <% @projects.each do |project| %>
-      <%= render 'shared/project', :locals => {
-        title: project.title,
-        description: project.description,
-        tech: project.tech,
-        background: project.background } %>
+    <% @projects.each do |p| %>
+      <%= render 'shared/project', :props => {
+        title: p.title,
+        description: p.description,
+        tech: p.tech,
+        background: p.background,
+        width: p.width,
+        color: p.color,
+        font: p.font
+        } %>
     <% end %>
   </div>
 </div>

@@ -1,3 +1,8 @@
-<div class='project-self' style='background: <% locals[:background] %>'>
-  <h1><%= locals[:title] %>
+<div class='project-self'
+style='
+background-image: linear-gradient(<%= props[:color] %>, <%= props[:color] %>), url(<%= props[:background] %>);
+width: <%= props[:width] %>;
+font-family: <%= props[:font] %>'>
+  <h1><%= props[:title] %></h1>
+  <h6><%= props[:description] %><h6>
 </div>
