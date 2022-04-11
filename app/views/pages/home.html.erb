@@ -25,9 +25,18 @@
         </p>
       </div>
       <div class='left-contacts'>
-        <a>fordburgess1@gmail.com</a>
-        <a href='https://www.instagram.com/ford_burgess/'>@ford_burgess</a>
-        <a href='https://www.linkedin.com/in/ford-burgess/'>linkedin.com/in/ford-burgess</a>
+        <li>
+          <img src='assets/mail.png' />
+          <a target='_blank' href='mailto:fordburgess1@gmail.com'>fordburgess1@gmail.com</a>
+        </li>
+        <li>
+          <img src='assets/instagram.png' />
+          <a target='_blank' href='https://www.instagram.com/ford_burgess/'>@ford_burgess</a>
+        </li>
+        <li>
+          <img src='assets/linkedin.png' />
+          <a target='_blank' href='https://www.linkedin.com/in/ford-burgess/'>linkedin.com/in/ford-burgess</a>
+        </li>
       </div>
     </div>
     <div class='bio-sub-right'>
@@ -40,7 +49,7 @@
     <h2>Projects</h2>
   </div>
   <div class='projects-display'>
-    <% @projects.each do |p| %>
+    <% @projects.each_with_index do |p, index| %>
       <%= render 'shared/project', :props => {
         title: p.title,
         description: p.description,
@@ -51,7 +60,7 @@
         color2: p.color2,
         font_color: p.font_color,
         font: p.font,
-        font2: p.font2
+        font2: p.font2,
         } %>
     <% end %>
   </div>
