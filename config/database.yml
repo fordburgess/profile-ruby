@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: ford-burgess_production
-  username: fordburgess
-  password: <%= ENV['FORDBURGESS_DATABASE_PASSWORD'] %>
+  username: ford-burgess
+  password: <%= ENV['FORD-BURGESS_DATABASE_PASSWORD'] %>
