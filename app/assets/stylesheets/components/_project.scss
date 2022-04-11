@@ -17,24 +17,26 @@
   }
   .initial {
     //@error: slide_up_from_bottom 0.5s linear;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: translateY(0);
+    text-align: center;
   }
   .secondary {
     //animation: slide_up_to_top 0.5s linear;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: translateY(-100%);
+    text-align: center;
   }
 
   &:hover {
     .initial {
       //animation: slide_down_to_bottom 0.5s linear;
-      transition: 1s ease-in-out;
+      transition: 0.5s ease-in-out;
       transform: translateY(100%);
     }
     .secondary {
       //animation: slide_down_from_top 0.5s linear;
-      transition: 1s ease-in-out;
+      transition: 0.5s ease-in-out;
       transform: translateY(0);
     }
   }
