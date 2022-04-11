@@ -20,4 +20,13 @@
   .secondary {
     display: none;
   }
+
+  @keyframes Slide_up {
+    100% {
+      transform: translateY(250px)
+    }
+    50% {
+      transform: translateY(500px)
+    }
+  }
 }
