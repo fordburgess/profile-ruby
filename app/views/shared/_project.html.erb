@@ -4,13 +4,25 @@ background-image: linear-gradient(<%= props[:color] %>, <%= props[:color] %>), u
 width: <%= props[:width] %>;
 font-family: <%= props[:font] %>;'
 >
-  <h1 style='
-  color: <%= props[:font_color] %>;
-  # text-shadow: 2px 2px 1px ;
-  '>
-  <%= props[:title] %></h1>
-  <h6 style='
-  font-family: <%= props[:font2] %>;
-  '>
-  <%= props[:description] %><h6>
+  <div class='initial'>
+    <h1 style='
+    color: <%= props[:font_color] %>;
+    # text-shadow: 2px 2px 1px ;
+    '>
+    <%= props[:title] %></h1>
+    <h6 style='
+    font-family: <%= props[:font2] %>;
+    color: <%= props[:color2] %>;
+    '>
+    <%= props[:description] %><h6>
+  </div>
+  <div class='secondary'>
+    <h2>Hello</h2>
+  </div>
 </div>
+
+<script>
+  document.querySelector(".project-self").addEventListener('mouseenter', () => {
+    document.querySelector(".initial").style = 'display: none'
+  })
+</script>
