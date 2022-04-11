@@ -16,34 +16,42 @@
     margin-bottom: -20px;
   }
   .initial {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    // padding-top: 150px;
-    bottom: -20%;
-    transition: 0.5s ease;
+    //@error: slide_up_from_bottom 0.5s linear;
+    transition: 1s ease-in-out;
+    transform: translateY(0);
   }
   .secondary {
-    position: absolute;
-    height: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 150px;
-    top: 100%;
-    transition: 0.5s ease;
-    overflow: hidden;
+    //animation: slide_up_to_top 0.5s linear;
+    transition: 1s ease-in-out;
+    transform: translateY(-100%);
   }
 
   &:hover {
     .initial {
-      overflow: hidden;
-      bottom: 100%;
-      height: 0;
+      //animation: slide_down_to_bottom 0.5s linear;
+      transition: 1s ease-in-out;
+      transform: translateY(100%);
     }
     .secondary {
-      top: 0%;
-      height: 100%;
+      //animation: slide_down_from_top 0.5s linear;
+      transition: 1s ease-in-out;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide_up_from_bottom {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes slide_up_from_bottom {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes slide_down {
+    0% {
+      transform: translateY(0)
+    }
+    100% {
+      transform: translateY(100%);
     }
   }
 
