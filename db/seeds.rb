@@ -8,10 +8,10 @@
 Project.delete_all
 
 projects = [
-  {title: "VenuLet", description: "Make Your Event Eventful", tech: ["Ruby on Rails", "PostgreSQL"], background: "/images/venulet1.png", width: "65%", color: "#0a79257e", font_color: "white", font: "EB Garamond", font2: "Petit Formal Script" },
-  {title: "BandMates", description: "Bringing Musicians Together, Wherever", tech: ["Ruby on Rails", "PostgreSQL"], background: "/images/bandmates2.jpg", width: "32%", color: "#2700f847", color2: "white", font_color: "#ff71d5ff", font: "Lobster", font2: "Montserrat"},
-  {title: "Hangman", description: "An Addictive Classic", tech: ["React", "JavaScript"], background: "/images/hangman1.jpg", width: "32%", color: "#fcd69c54", color2: "FFC100", font_color: '#FFF99A', font: "Arial, Helvetica, sans-serif"},
-  {title: "Task Manager", description: "That Which Is Organized, Does Not Have To Be Found", tech: ["React", "JavaScript", "Auth0", "Hasura/PostgreSQL"], background: "/images/taskManagerBlur.jpg", width: '65%', color: "#00ffe154", color2: "navy", font_color: "#0289F5", font: 'Poppins'}
+  {title: "VenuLet", description: "Make Your Event Eventful", description2: "An AirBnB Style Event Venue Listing Service", tech: ["Ruby on Rails", "PostgreSQL"], background: "/images/venulet1.png", width: "65%", color: "#0a79257e", font_color: "white", font: "EB Garamond", font2: "EB Garamond" },
+  {title: "BandMates", description: "Bringing Musicians Together, Wherever", description2: "A Social Media Platform for Musicians", tech: ["Ruby on Rails", "PostgreSQL"], background: "/images/bandmates2.jpg", width: "32%", color: "#2700f847", color2: "white", font_color: "#ff71d5ff", font: "Lobster", font2: "Montserrat"},
+  {title: "Hangman", description: "An Addictive Classic", description2: "The Classic Brain Teaser Game Brought to Life With React", tech: ["React", "JavaScript"], background: "/images/hangman1.jpg", width: "32%", color: "#fcd69c54", color2: "FFC100", font_color: '#FFF99A', font: "Arial, Helvetica, sans-serif"},
+  {title: "Task Manager", description: "That Which Is Organized, Does Not Have To Be Found", description2: "Kanban Style Task Manager That Simplifies Organizing Tasks", tech: ["React", "JavaScript", "Auth0", "Hasura/PostgreSQL"], background: "/images/taskManagerBlur.jpg", width: '65%', color: "#00ffe154", color2: "navy", font_color: "#0289F5", font: 'Poppins'}
 ]
 
 projects.each_with_index { |project| Project.create!(project) }
