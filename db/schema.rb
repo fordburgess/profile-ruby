@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_12_122033) do
+ActiveRecord::Schema.define(version: 2022_04_18_185245) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2022_04_12_122033) do
     t.string "font_color"
     t.string "font2"
     t.string "description2"
+    t.text "about"
+    t.string "show_photos"
   end
 
 end

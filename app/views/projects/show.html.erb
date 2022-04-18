@@ -1,0 +1,20 @@
+<div class='show-container'>
+  <div class='sub-container-left'>
+    <% @project.show_photos.split(', ').each do |photo| %>
+      <img src=<%= photo %> />
+    <% end %>
+  </div>
+  <div class='sub-container-right' >
+    <h1 style='font-size: 55px; margin: 0'><%= @project.title %></h1>
+    <ul>
+      <li>
+        <label>Tech</label>
+        <h4><%= @project.tech %></h4>
+      </li>
+      <li>
+        <label>About</label>
+        <h4><%= @project.about %></h4>
+      </li>
+    </ul>
+  </div>
+</div>
