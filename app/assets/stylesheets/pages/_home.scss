@@ -19,11 +19,12 @@
   .bio-sub-cont {
     display: flex;
     width: 68vw;
+    align-items: center;
     .bio-sub-left {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-right: 150px;
+      padding-right: 80px;
       .left-contacts {
         li {
           display: flex;
